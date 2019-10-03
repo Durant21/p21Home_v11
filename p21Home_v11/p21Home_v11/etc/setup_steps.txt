@@ -33,24 +33,24 @@ cd /webapps
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=360000'
 
-git clone https://github.com/Durant21/p21Home.git
+git clone https://github.com/Durant21/p21Home_v11.git
 
 
-cd /webapps/proto21/p21Home/webapps/proto21_home/
+cd /webapps/p21Home_v11/p21Home_v11/
 python3 setup.py develop
 
 
-cp /webapps/proto21/p21Home/webapps/proto21_home/proto21_home/etc/init/proto21_svc.service /etc/systemd/system/
+cp /webapps/p21Home_v11/p21Home_v11/etc/init/proto21_v11_svc.service /etc/systemd/system/
 
-systemctl start auto_svc
-systemctl enable auto_svc
-systemctl status auto_svc
+systemctl start proto21_v11_svc
+systemctl enable proto21_v11_svc
+systemctl status proto21_v11_svc
 
 
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /webapps/proto21/p21Home/webapps/proto21_home/proto21_home/etc/nginx/sites-available/proto21_service.nginx /etc/nginx/sites-available/
+cp /webapps/p21Home_v11/p21Home_v11/p21Home_v11/etc/nginx/sites-available/proto21_v11_service.nginx /etc/nginx/sites-available/
 
 update-rc.d nginx enable
 

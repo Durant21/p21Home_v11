@@ -1,0 +1,16 @@
+[Unit]
+Description=uWSGI proto21_home_v11 server instance
+After=syslog.target
+
+[Service]
+ExecStart=/usr/local/bin/uwsgi --ini-paste /webapps/p21Home_v11/p21Home_v11/production.ini
+# Requires systemd version 211 or newer
+RuntimeDirectory=/webapps/p21Home_v11/p21Home_v11/
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

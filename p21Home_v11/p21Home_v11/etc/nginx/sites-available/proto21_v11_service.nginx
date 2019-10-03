@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name 209.182.252.127;
+    server_name 142.93.244.1;
     server_tokens off;
 
     charset utf-8;
@@ -11,7 +11,7 @@ server {
         gzip_buffers    8 256k;
         uwsgi_buffers   8 256k;
 
-        alias /webapps/proto21/p21Home/webapps/proto21_home/proto21_home/static;
+        alias /webapps/p21Home_v11/p21Home_v11/p21Home_v11/static;
         expires 365d;
     }
     location / {
