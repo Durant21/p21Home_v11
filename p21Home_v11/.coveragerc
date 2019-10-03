@@ -1,0 +1,3 @@
+[run]
+source = p21Home_v11
+omit = p21Home_v11/test*
