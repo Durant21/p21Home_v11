@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53d6ebaa-c5aa-46bb-9dfd-c559eca7b3f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p21Home_v11/etc/init/proto21_v11_svc.service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p21Home_v11/etc/init/proto21_svc.service" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p21Home_v11/etc/nginx/sites-available/proto21_service.nginx" beforeDir="false" afterPath="$PROJECT_DIR$/p21Home_v11/etc/nginx/sites-available/proto21_v11_service.nginx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p21Home_v11/etc/init/proto21_v11_svc.service" beforeDir="false" afterPath="$PROJECT_DIR$/p21Home_v11/etc/init/p21Home_v11_svc.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p21Home_v11/etc/nginx/sites-available/proto21_v11_service.nginx" beforeDir="false" afterPath="$PROJECT_DIR$/p21Home_v11/etc/nginx/sites-available/p21Home_v11_service.nginx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p21Home_v11/etc/setup_steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/p21Home_v11/etc/setup_steps.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570141731302</updated>
-      <workItem from="1570141732768" duration="2336000" />
+      <workItem from="1570141732768" duration="6271000" />
     </task>
     <servers />
   </component>

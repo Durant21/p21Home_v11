@@ -40,17 +40,18 @@ cd /webapps/p21Home_v11/p21Home_v11/
 python3 setup.py develop
 
 
-cp /webapps/p21Home_v11/p21Home_v11/etc/init/proto21_v11_svc.service /etc/systemd/system/
+cp /webapps/p21Home_v11/p21Home_v11/p21Home_v11/etc/init/p21Home_v11_svc.service /etc/systemd/system/
 
-systemctl start proto21_v11_svc
-systemctl enable proto21_v11_svc
-systemctl status proto21_v11_svc
+systemctl start p21Home_v11_svc
+systemctl enable p21Home_v11_svc
+systemctl status p21Home_v11_svc
 
 
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /webapps/p21Home_v11/p21Home_v11/p21Home_v11/etc/nginx/sites-available/proto21_v11_service.nginx /etc/nginx/sites-available/
+cp /webapps/p21Home_v11/p21Home_v11/p21Home_v11/etc/nginx/sites-available/p21Home_v11_service.nginx /etc/nginx/sites-available/
+cp /webapps/p21Home_v11/p21Home_v11/p21Home_v11/etc/nginx/sites-available/p21Home_v11_service.nginx /etc/nginx/sites-enabled/
 
 update-rc.d nginx enable
 
