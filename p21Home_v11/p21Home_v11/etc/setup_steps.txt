@@ -12,6 +12,8 @@ apt-get install --no-install-recommends -y -q build-essential
 apt-get install --no-install-recommends -y -q git python3 python3-dev wget unzip nload
 
 # for nginx latest
+(sudo apt-get install software-properties-common)
+(sudo apt-get update)
 add-apt-repository ppa:nginx/development
 apt-get update
 apt install python-software-properties
@@ -23,8 +25,8 @@ pip3 install glances
 
 mkdir /webapps
 mkdir /webapps/logs
-mkdir /webapps/logs/auto_service
-mkdir /webapps/logs/auto_service/app_log
+mkdir /webapps/logs/p21Home_v11
+mkdir /webapps/logs/p21Home_v11/app_log
 cd /webapps
 
 # working dir
